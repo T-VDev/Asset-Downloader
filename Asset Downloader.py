@@ -180,10 +180,13 @@ def main():
             break
         
         asset_ids = [id.strip() for id in asset_ids_input.split(',') if id.strip()]
-        download_audio_file(roblox_cookie, asset_ids)
         
-        print(Fore.CYAN + "All specified audio assets have been downloaded." + Style.RESET_ALL)
-
+        for asset_id in asset_ids:
+            file_path, creator_id, creator_type, place_id = download_audio_file(roblox_cookie, asset_id)
+            if file_path:
+                print(Fore.GREEN + f"Downloaded {file_path}" + Style.RESET_ALL)
+            else:
+                print(Fore.RED + f"Failed to download asset ID {asset_id}" + Style.RESET_ALL)
 
 if __name__ == "__main__":
     main()
