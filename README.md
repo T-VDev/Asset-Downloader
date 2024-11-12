@@ -58,20 +58,20 @@ The settings will be saved in a file called **`config.yaml`**, located in the sa
 ```bash
 pip install discord requests
 ```
--For the .exe version, simply download and run the .exe file. No installation is necessary.
--Stable internet connection is required to download audio files.
+- For the .exe version, simply download and run the .exe file. No installation is necessary.
+- Stable internet connection is required to download audio files.
 
 ---
 
 ### **How to Run**
 
--Download the .exe file or run the Python script.
--For Normal Mode: Follow the on-screen instructions to input the audio IDs.
--For Discord Mode: Provide your Discord token when prompted. You can run /assetdownload ASSETID in Discord to fetch the audio file.
+- Download the .exe file or run the Python script.
+- For Normal Mode: Follow the on-screen instructions to input the audio IDs.
+- For Discord Mode: Provide your Discord token when prompted. You can run /assetdownload ASSETID in Discord to fetch the audio file.
 
 ---
 
 ### **Configuration File (config.yaml)**
 
--The program saves your preferences in the config.yaml file, including your Roblox cookie and Discord token. 
--You can edit this file later if needed.
+- The program saves your preferences in the config.yaml file, including your Roblox cookie and Discord token. 
+- You can edit this file later if needed.
